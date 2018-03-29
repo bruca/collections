@@ -9,7 +9,7 @@ setup(
     name='collections',
     version=package_version,
     desctiption='Collection utils',
-    url='',
+    url='https://github.com/bruca/collections/tree/master/collection',
     author='Bruca Lock',
     license='GPLv3',
     keywords='collection collections vector list',
