@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='collection-plus',
-    version='0.0.5',
+    version='0.0.6',
     description='Collection utils',
     long_description=open('README.rst').read(),
     url='https://github.com/bruca/collections',
