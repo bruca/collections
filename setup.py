@@ -1,27 +1,25 @@
-import re
-import os.path
 from setuptools import setup, find_packages
 
-with open(os.path.join(os.path.dirname(__file__), 'collection', '__init__.py')) as v_file:
-    package_version = re.compile(r".*__version__ = '(.?)'", re.S).match(v_file.read()).group(1)
-
 setup(
-    name='collections',
-    version=package_version,
-    desctiption='Collection utils',
-    url='https://github.com/bruca/collections/tree/master/collection',
+    name='collection-plus',
+    version='0.0.1',
+    description='Collection utils',
+    long_description='Implement Java style collections for Python',
+    url='https://github.com/bruca/collections',
     author='Bruca Lock',
-    license='GPLv3',
-    keywords='collection collections vector list',
+    author_email='lockshi@hotmail.com',
+    keywords='collection collections',
     classifiers=[
-        'Development Status :: 1 - Prototype',
-        'Environment :: Any',
-        'Intended Audience :: Developpers',
-        'Operating System :: Linux',
-        'Operating System :: MAC',
-        'Programming Language :: Python :: 3 :: Only'
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
-    packages=find_packages(),
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     include_package_data=False,
     zip_safe=False
 )
