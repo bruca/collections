@@ -27,7 +27,12 @@ Usage
     stack = Stack()
     stack.push(1)
     stack.pop()
-    
+    item = stack.peek()
+
+    queue = Queue()
+    queue.offer(1)
+    item = queue.peek()
+    queue.poll()
 
 Build Project
 =============
