@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='collection-plus',
-    version='0.0.1',
+    version='0.0.3',
     description='Collection utils',
     long_description='Implement Java style collections for Python',
     url='https://github.com/bruca/collections',
