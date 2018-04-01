@@ -2,22 +2,37 @@ class List:
     """List is an array of objects
     """
     def __init__(self):
-        self.__arr__ = []
+        self._arr_ = []
 
     def add(self, e):
         """Append an element
         """
-        self.__arr__.append(e)
+        self._arr_.append(e)
 
     def clear(self):
         """Clear array
         """
-        self.__arr__.clear()
+        self._arr_.clear()
 
-    def is_empty(self):
-        return len(self.__arr__) == 0
+    def empty(self):
+        return self.size() == 0
 
     def remove(self, index):
         """Remove element at given index
         """
-        self.__arr__.pop(index)
+        if self.empty():
+            return None
+
+        return self._arr_.pop(index)
+
+    def size(self):
+        return len(self._arr_)
+
+    def get(self, index):
+        if self.empty():
+            return None
+
+        return self._arr_[index]
+
+    def to_array(self):
+        return self._arr_

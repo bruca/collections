@@ -24,6 +24,10 @@ Usage
     vec = Vector()
     vec.add(1)
 
+    stack = Stack()
+    stack.push(1)
+    stack.pop()
+    
 
 Build Project
 =============

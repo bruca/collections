@@ -6,11 +6,11 @@ class ListTestCase(unittest.TestCase):
     def test_vector(self):
         l = List()
         l.add(1)
-        self.assertTrue(l.is_empty() is False)
+        self.assertTrue(l.empty() is False)
 
     def test_vector_empty(self):
         l = List()
-        self.assertTrue(l.is_empty())
+        self.assertTrue(l.empty())
 
 
 if __name__ == '__main__':
