@@ -36,10 +36,11 @@ Usage
 
 Build Project
 =============
-python setup.py sdist
-python setup.py bdist_wheel
+source distribution: python setup.py sdist
+wheel distribution:  python setup.py bdist_wheel
 
 
 Distribute
 ==========
-twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+test repo: twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+prod repo: twine upload dist/*
