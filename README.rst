@@ -7,7 +7,7 @@ Installation
 
 ::
 
-    $ pip install collection-pipelines
+    $ pip install collection-plus
 
 
 Usage
