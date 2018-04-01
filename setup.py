@@ -4,7 +4,7 @@ setup(
     name='collection-plus',
     version='0.0.3',
     description='Collection utils',
-    long_description='Implement Java style collections for Python',
+    long_description=open('README.rst').read(),
     url='https://github.com/bruca/collections',
     author='Bruca Lock',
     author_email='lockshi@hotmail.com',
